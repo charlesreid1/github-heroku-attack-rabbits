@@ -79,5 +79,5 @@ Commercial services:
 
 ## License
 
-This is released under the [WTFPL](LICENSE).
+This is released under the [WTFPL](https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits/src/branch/docs/LICENSE).
 
