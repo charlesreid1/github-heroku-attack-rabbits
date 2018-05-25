@@ -24,7 +24,7 @@ pages:
 copyright: 'Copyright &copy; 2018 Charles Reid, released under the <a href="https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits/src/branch/master/LICENSE">WTFPL</a>.<br /><br />Many Bothans died to bring us this documentation.<br /><br />'
 
 docs_dir: docs
-site_dir: site/content
+site_dir: site
 
 theme:
 
