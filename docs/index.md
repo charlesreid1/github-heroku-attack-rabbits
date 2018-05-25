@@ -4,11 +4,11 @@
 
 This repository helps you protect your secret pages by (deep breath):
 
-hosting your secret page of static and/or dynamic content using a free Heroku app 
+hosting your secret page of static and/or dynamic content by using a free Heroku app 
 running a Python Flask server that uses Flask-Dance to authenticate visitors 
-with Github which allows you fine-grained access control over your pages based on
-user attributes like organization or team membership or even things like how many
-repositories a user has or how many vowels are in their username. 
+with Github using OAuth which allows you fine-grained access control for your pages
+using user attributes like organization or team membership or even things like how many
+vowels a user has in their username. 
 
 Also, did I mention the attack rabbits?
 
