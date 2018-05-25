@@ -542,15 +542,25 @@
                 <h1 id="github-heroku-attack-rabbits">github-heroku-attack-rabbits</h1>
 <h2 id="whats-this-business-all-about-then">What's this business all about, then?</h2>
 <p>This repository helps you protect your secret pages by (deep breath):</p>
-<p>hosting your secret page of static and/or dynamic content using a free Heroku app 
+<p>hosting your secret page of static and/or dynamic content by using a free Heroku app 
 running a Python Flask server that uses Flask-Dance to authenticate visitors 
-with Github which allows you fine-grained access control over your pages based on
-user attributes like organization or team membership or even things like how many
-repositories a user has or how many vowels are in their username. </p>
+with Github using OAuth which allows you fine-grained access control for your pages
+using user attributes like organization or team membership or even things like how many
+vowels a user has in their username. </p>
 <p>Also, did I mention the attack rabbits?</p>
 <p><img alt="warning: attack rabbits ahead" src="./img/warning.png" /></p>
 <h2 id="where-is-everything">Where is everything?</h2>
-<p>Two branches document how github-heroku-attack-rabbits work:</p>
+<p>Final pages:</p>
+<ul>
+<li>
+<p>The finished product (pages on Heroku protected by attack rabbits) 
+    is at <a href="https://github-heroku-attack-rabbits.herokuapp.com">github-heroku-attack-rabbits.herokuapp.com</a></p>
+</li>
+<li>
+<p>The documentation is at <a href="https://pages.charlesreid1.com/github-heroku-attack-rabbits">pages.charlesreid1.com/github-heroku-attack-rabbits</a></p>
+</li>
+</ul>
+<p>Two branches in this repo compose the github-heroku-attack-rabbits documentation:</p>
 <ul>
 <li>
 <p>(<strong>YOU ARE HERE</strong>) The <a href="https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits/src/branch/docs">docs</a> branch 
@@ -572,7 +582,9 @@ repositories a user has or how many vowels are in their username. </p>
     but in practice this would be in a protected repository.</p>
 </li>
 <li>
-<p>The <a href="https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits/src/branch/heroku-pages">heroku-pages</a> branch</p>
+<p>The <a href="https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits/src/branch/heroku-pages">heroku-pages</a> branch
+    contains the content that is actually pushed to Heroku - that is, 
+    the final Flask app.</p>
 </li>
 </ul>
 <h2 id="contents">Contents</h2>
