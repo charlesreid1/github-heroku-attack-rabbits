@@ -36,7 +36,7 @@ contents200 = """
 <div class="body attack attack-rabbits">
 <p>You found a public page, so you're safe for now. Run away while you still can.</p>
 <p>Otherwise... the attack rabbits may find you yet.</p>
-<img src="img/waring.png" />
+<img src="../img/warning.png" />
 </div>
 </body></html>
 """
@@ -52,7 +52,7 @@ contents403 = """
 sneaky unauthorized intruder, at the hands of one of
 the nastiest, most horrible, gnashing teeth, and fangs, 
 and little claws like daggers -</p>
-<img src="img/attack-rabbits.png" />
+<img src="../img/attack-rabbits.png" />
 </div>
 </body></html>
 """
@@ -65,7 +65,7 @@ contents404 = """
 <div class="body attack attack-rabbits">
 <p>The resource you requested could not be found.</p>
 <p>The attack rabbits are circling, eyeing you suspiciously.</p>
-<img src="img/attack-rabbit.png" />
+<img src="../img/attack-rabbit.png" />
 </div>
 </body></html>
 """
@@ -78,22 +78,26 @@ def index():
     return send_from_directory(STATIC_PATH, 'index.html')
 
 
-@app.route('/fishslap/<path:path>')
-def fishslap_even(path):
+@app.route('/fishslap/')
+def fishslap_even():
     if not github.authorized:
         return redirect(url_for("github.login"))
 
     resp = github.get("/user")
     if resp.ok:
         username = resp.json()['login']
-        if not even_vowels(username):
-            return send_from_directory(STATIC_PATH, path)
+        if even_vowels(username):
+            #return "Hello {username}".format(username=username)
+            fishslap = os.path.join(STATIC_PATH,'fishslap')
+            return send_from_directory(fishslap, 'index.html')
     
     return contents403
 
 
-@app.route('/sillywalk/<path:path>')
-def sillywalk_odd(path):
+#@app.route('/sillywalk/<path:path>')
+#def sillywalk_odd(path):
+@app.route('/sillywalk/')
+def sillywalk_odd():
     if not github.authorized:
         return redirect(url_for("github.login"))
 
@@ -101,7 +105,9 @@ def sillywalk_odd(path):
     if resp.ok:
         username = resp.json()['login']
         if not even_vowels(username):
-            return send_from_directory(STATIC_PATH, path)
+            #return "Hello {username}".format(username=username)
+            sillywalk = os.path.join(STATIC_PATH,'sillywalk')
+            return send_from_directory(sillywalk, path)
     
     return contents403
 
@@ -124,8 +130,8 @@ def even_vowels(my_string):
     Boolean: are there an even number of vowels in my_string?
     """
     i = 0
-    for c in username:
-        if c in ['a','e','i','o','u']:
+    for c in my_string:
+        if c in list('aeiou'):
             i += 1
     if i%2==0:
         return True

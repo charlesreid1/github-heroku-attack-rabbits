@@ -2,32 +2,32 @@
     "docs": [
         {
             "location": "/",
-            "text": "Secret Index\n\n\nThis is an index of secret pages. Note that this page is not protected.\n\n\nYou will be asked to authenticate when you click the links below.\n\n\nAny Github user will be able to view these sites.\n\n\nSecret page 1: \nfish_slap\n\n\nSecret page 2: \nsilly_walks",
+            "text": "Secret Index\n\n\nThis is an index of secret pages. Note that this page is not protected.\n\n\nYou will be asked to authenticate when you click the links below.\n\n\nIf your username has an \neven number of vowels\n, you are a member \nof the \nSecret Society of the Fish Slappers\n.\nClick the link to log in and proceed, or else be attacked by \nthe Github-Heroku attack rabbits.\n\n\nIf your username has an \nodd number of vowels\n, you are a member \nof the \nSecret Ministerial Department for Theoretical Silly Walk Studies\n.\nClick the link to log in and proceed, or else be attacked by \nthe Github-Heroku attack rabbits.",
             "title": "Index"
         },
         {
             "location": "/#secret-index",
-            "text": "This is an index of secret pages. Note that this page is not protected.  You will be asked to authenticate when you click the links below.  Any Github user will be able to view these sites.  Secret page 1:  fish_slap  Secret page 2:  silly_walks",
+            "text": "This is an index of secret pages. Note that this page is not protected.  You will be asked to authenticate when you click the links below.  If your username has an  even number of vowels , you are a member \nof the  Secret Society of the Fish Slappers .\nClick the link to log in and proceed, or else be attacked by \nthe Github-Heroku attack rabbits.  If your username has an  odd number of vowels , you are a member \nof the  Secret Ministerial Department for Theoretical Silly Walk Studies .\nClick the link to log in and proceed, or else be attacked by \nthe Github-Heroku attack rabbits.",
             "title": "Secret Index"
         },
         {
             "location": "/fishslap/",
-            "text": "The Secret Society of the Fish Slapping Dance\n\n\nFish-Slapping Dance",
+            "text": "The Secret Society of the Fish Slapping Dance\n\n\nWelcome, and congratulations on having an even number of vowels in your Github handle. \n\n\nAnd now for something completely expected:\n\n\nFish-Slapping Dance",
             "title": "Fish Slapping"
         },
         {
             "location": "/fishslap/#the-secret-society-of-the-fish-slapping-dance",
-            "text": "Fish-Slapping Dance",
+            "text": "Welcome, and congratulations on having an even number of vowels in your Github handle.   And now for something completely expected:  Fish-Slapping Dance",
             "title": "The Secret Society of the Fish Slapping Dance"
         },
         {
-            "location": "/sillywalks/",
-            "text": "The Secret Ministry of Silly Walks\n\n\nMinistry of Sily Walks",
+            "location": "/sillywalk/",
+            "text": "The Secret Ministry of Silly Walks\n\n\nWelcome, and congratulations on having an odd number of vowels in your Github handle. \n\n\nAnd now for something completely expected:\n\n\nMinistry of Sily Walks",
             "title": "Silly Walks"
         },
         {
-            "location": "/sillywalks/#the-secret-ministry-of-silly-walks",
-            "text": "Ministry of Sily Walks",
+            "location": "/sillywalk/#the-secret-ministry-of-silly-walks",
+            "text": "Welcome, and congratulations on having an odd number of vowels in your Github handle.   And now for something completely expected:  Ministry of Sily Walks",
             "title": "The Secret Ministry of Silly Walks"
         }
     ]
