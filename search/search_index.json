@@ -172,13 +172,33 @@
         },
         {
             "location": "/flask_heroku/",
-            "text": "Deploying to Heroku\n\n\nOnce we have debugged the Flask app and we are happy with it,\nwe are ready to deploy it to Heroku. To deploy content to Heroku,\nwe just add our Heroku project as a git remote (see the \nheroku\n\npage for how to do that) and then push to the master branch of the \nheroku remote git repo. Changes are pulled in by Heroku and the \napp is restarted each time you run git push.\n\n\nFIXME: \n\n\nTODO:\n\n\nFILL IN MORE DETAILS",
+            "text": "Deploying to Heroku\n\n\nOnce we have debugged the Flask app and we are happy with it,\nwe are ready to deploy it to Heroku. To deploy content to Heroku,\nwe just add our Heroku project as a git remote (see the \nheroku\n\npage for how to do that) and then push to the master branch of the \nheroku remote git repo. Changes are pulled in by Heroku and the \napp is restarted each time you run git push.\n\n\nHeroku Login\n\n\nFrom the \nsite/\n directory containing the contents of the \nheroku-pages\n branch,\nthat is, containing the Python flask app, log in to Heroku:\n\n\nheroku login\n\n\n\n\nAdd Heroku Remote\n\n\nNow have Heroku add the proper git remote address:\n\n\nheroku git:remote -a <heroku-app-name>\n\n\n\n\nNow you're ready to deploy to Heroku. \n\n\nDeploy to Heroku\n\n\nDouble check your app is ready, then deploy:\n\n\ngit push heroku heroku-pages:master\n\n\n\n\nThis will push the local branch \nheroku-pages\n to\nthe remote branch \nmaster\n on the \nheroku\n remote.\nThis should begin a pre-commit hook where Heroku\ncompiles your Python app. You should get the green\nlight, if you tested your app locally and everything\nwas good to go.\n\n\nCheck Your Heroku App\n\n\nYour Heroku app will be available at \n\n\nhttps://<heroku-app-name>.herokuapp.com\n\n\n\n\nYou should see your Python flask app\nshow up shortly.",
             "title": "Deploying Flask App to Heroku"
         },
         {
             "location": "/flask_heroku/#deploying-to-heroku",
-            "text": "Once we have debugged the Flask app and we are happy with it,\nwe are ready to deploy it to Heroku. To deploy content to Heroku,\nwe just add our Heroku project as a git remote (see the  heroku \npage for how to do that) and then push to the master branch of the \nheroku remote git repo. Changes are pulled in by Heroku and the \napp is restarted each time you run git push.  FIXME:   TODO:  FILL IN MORE DETAILS",
+            "text": "Once we have debugged the Flask app and we are happy with it,\nwe are ready to deploy it to Heroku. To deploy content to Heroku,\nwe just add our Heroku project as a git remote (see the  heroku \npage for how to do that) and then push to the master branch of the \nheroku remote git repo. Changes are pulled in by Heroku and the \napp is restarted each time you run git push.",
             "title": "Deploying to Heroku"
+        },
+        {
+            "location": "/flask_heroku/#heroku-login",
+            "text": "From the  site/  directory containing the contents of the  heroku-pages  branch,\nthat is, containing the Python flask app, log in to Heroku:  heroku login",
+            "title": "Heroku Login"
+        },
+        {
+            "location": "/flask_heroku/#add-heroku-remote",
+            "text": "Now have Heroku add the proper git remote address:  heroku git:remote -a <heroku-app-name>  Now you're ready to deploy to Heroku.",
+            "title": "Add Heroku Remote"
+        },
+        {
+            "location": "/flask_heroku/#deploy-to-heroku",
+            "text": "Double check your app is ready, then deploy:  git push heroku heroku-pages:master  This will push the local branch  heroku-pages  to\nthe remote branch  master  on the  heroku  remote.\nThis should begin a pre-commit hook where Heroku\ncompiles your Python app. You should get the green\nlight, if you tested your app locally and everything\nwas good to go.",
+            "title": "Deploy to Heroku"
+        },
+        {
+            "location": "/flask_heroku/#check-your-heroku-app",
+            "text": "Your Heroku app will be available at   https://<heroku-app-name>.herokuapp.com  You should see your Python flask app\nshow up shortly.",
+            "title": "Check Your Heroku App"
         },
         {
             "location": "/custom_domains/",
