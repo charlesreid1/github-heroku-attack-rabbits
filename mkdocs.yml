@@ -11,7 +11,7 @@ edit_uri: ""
 pages:
   - 'Index' : 'index.md'
   - 'Fish Slapping': 'fishslap.md'
-  - 'Silly Walks': 'sillywalks.md'
+  - 'Silly Walks': 'sillywalk.md'
 
 copyright: 'Copyright &copy; 2018 Charles Reid, released under the <a href="https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits/src/branch/docs/LICENSE">WTFPL</a>.<br /><br />Many Bothans died to bring us this documentation.<br /><br />'
 
