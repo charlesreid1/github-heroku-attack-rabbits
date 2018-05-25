@@ -1,0 +1,34 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "Secret Index\n\n\nThis is an index of secret pages. Note that this page is not protected.\n\n\nYou will be asked to authenticate when you click the links below.\n\n\nAny Github user will be able to view these sites.\n\n\nSecret page 1: \nfish_slap\n\n\nSecret page 2: \nsilly_walks",
+            "title": "Index"
+        },
+        {
+            "location": "/#secret-index",
+            "text": "This is an index of secret pages. Note that this page is not protected.  You will be asked to authenticate when you click the links below.  Any Github user will be able to view these sites.  Secret page 1:  fish_slap  Secret page 2:  silly_walks",
+            "title": "Secret Index"
+        },
+        {
+            "location": "/fishslap/",
+            "text": "The Secret Society of the Fish Slapping Dance\n\n\nFish-Slapping Dance",
+            "title": "Fish Slapping"
+        },
+        {
+            "location": "/fishslap/#the-secret-society-of-the-fish-slapping-dance",
+            "text": "Fish-Slapping Dance",
+            "title": "The Secret Society of the Fish Slapping Dance"
+        },
+        {
+            "location": "/sillywalks/",
+            "text": "The Secret Ministry of Silly Walks\n\n\nMinistry of Sily Walks",
+            "title": "Silly Walks"
+        },
+        {
+            "location": "/sillywalks/#the-secret-ministry-of-silly-walks",
+            "text": "Ministry of Sily Walks",
+            "title": "The Secret Ministry of Silly Walks"
+        }
+    ]
+}

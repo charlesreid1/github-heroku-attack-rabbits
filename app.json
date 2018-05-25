@@ -1,0 +1,23 @@
+{
+  "name": "Github Heroku Attack Rabbits",
+  "description": "Protect private pages hosted on Heroku by authenticating with Github using Flask-Dance. Also, attack rabbits.",
+  "keywords": [
+    "oauth"
+  ],
+  "website": "https://pages.charlesreid1.com/github-heroku-attack-rabbits",
+  "repository": "https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits",
+  "env": {
+    "FLASK_SECRET_KEY": {
+      "description": "A secret key for verifying the integrity of signed cookies.",
+      "generator": "secret"
+    },
+    "GITHUB_OAUTH_CLIENT_ID": {
+      "description": "The OAuth client ID for your application, assigned by GitHub",
+      "value": "client-id-goes-here"
+    },
+    "GITHUB_OAUTH_CLIENT_SECRET": {
+      "description": "The OAuth client secret for your application, assigned by GitHub",
+      "value": "client-secret-goes-here"
+    }
+  }
+}
