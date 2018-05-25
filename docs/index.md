@@ -18,6 +18,28 @@ repositories a user has or how many vowels are in their username.
 Also, did I mention the attack rabbits?
 
 
+## Where is everything?
+
+Two branches document how github-heroku-attack-rabbits work:
+
+* (**YOU ARE HERE**) The [docs](https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits/src/branch/docs) branch 
+    contains the files needed to generate the 
+    [github-heroku-attack-rabbits documentation site](https://pages.charlesreid1.com/github-heroku-attack-rabbits).
+
+* The [gh-pages](https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits/src/branch/gh-pages) branch
+    contains the static files generated from the documentation.
+    The contents of this branch compose the 
+    [github-heroku-attack-rabbits documentation site](https://pages.charlesreid1.com/github-heroku-attack-rabbits).
+
+Two branches illustrate github-heroku-attack-rabbits in practice:
+
+* The [secret](https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits/src/branch/secret) branch contains the files needed to create the secret page. 
+    This repository is public, so obviously these aren't *actually* secret,
+    but in practice this would be in a protected repository.
+
+* The [heroku-pages](https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits/src/branch/heroku-pages) branch
+
+
 ## Contents
 
 An overview of the steps:
