@@ -2,7 +2,7 @@
 
 ## What's this business all about, then?
 
-This repository helps you protect your secret pages by (deep breath):
+This repository helps you put access control into place to protect your secret pages by (deep breath):
 
 hosting your secret page of static and/or dynamic content by using a free Heroku app 
 running a Python Flask server that uses Flask-Dance to authenticate visitors 
