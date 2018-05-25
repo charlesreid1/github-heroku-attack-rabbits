@@ -1,0 +1,41 @@
+site_name: Secret Site
+site_url: https://github-heroku-attack-rabbits.herokuapp.com
+repo_name: charlesreid1/github-heroku-attack-rabbits
+repo_url: https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits
+edit_uri: ""
+
+# Note: normally this whole branch/repo would be secret,
+# otherwise everyone could bypass your attack rabbits
+# by simply browsing your repository. 
+
+pages:
+  - 'Index' : 'index.md'
+  - 'Fish Slapping': 'fishslapping.md'
+  - 'Silly Walks': 'sillywalks.md'
+
+copyright: 'Copyright &copy; 2018 Charles Reid, released under the <a href="https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits/src/branch/master/LICENSE">WTFPL</a>.<br /><br />Many Bothans died to bring us this documentation.<br /><br />'
+
+docs_dir: docs
+site_dir: site/content
+
+theme:
+
+  name: null
+  custom_dir: 'mkdocs-material/material'
+
+  # pretty colors! see https://squidfunk.github.io/mkdocs-material/getting-started/#primary-colors
+  palette:
+    primary: 'teal'
+    accent: 'teal'
+  
+  # fun logos! see https://material.io/icons/
+  logo:
+    icon: 'lock'
+
+  font:
+    text: 'Questrial'
+    code: 'Roboto Mono'
+
+# this will add docs/css/custom.css to all your docs
+extra_css:
+  - css/custom.css
