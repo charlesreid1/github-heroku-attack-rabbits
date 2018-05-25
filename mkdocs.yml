@@ -1,4 +1,4 @@
-site_name: Secret Site
+site_name: This Is The Secret Site
 site_url: https://github-heroku-attack-rabbits.herokuapp.com
 repo_name: charlesreid1/github-heroku-attack-rabbits
 repo_url: https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits
@@ -10,10 +10,10 @@ edit_uri: ""
 
 pages:
   - 'Index' : 'index.md'
-  - 'Fish Slapping': 'fishslapping.md'
+  - 'Fish Slapping': 'fishslap.md'
   - 'Silly Walks': 'sillywalks.md'
 
-copyright: 'Copyright &copy; 2018 Charles Reid, released under the <a href="https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits/src/branch/master/LICENSE">WTFPL</a>.<br /><br />Many Bothans died to bring us this documentation.<br /><br />'
+copyright: 'Copyright &copy; 2018 Charles Reid, released under the <a href="https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits/src/branch/docs/LICENSE">WTFPL</a>.<br /><br />Many Bothans died to bring us this documentation.<br /><br />'
 
 docs_dir: secret_docs
 site_dir: site/content
@@ -28,9 +28,11 @@ theme:
     primary: 'teal'
     accent: 'teal'
   
-  # fun logos! see https://material.io/icons/
-  logo:
-    icon: 'lock'
+  logo: 'img/bunny.png'
+
+  ### # fun logos! see https://material.io/icons/
+  ### logo:
+  ###   icon: 'lock'
 
   font:
     text: 'Questrial'
