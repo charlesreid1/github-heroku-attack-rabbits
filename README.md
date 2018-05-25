@@ -2,7 +2,7 @@
 
 Protect secret pages hosted on Heroku by authenticating with Github using Flask-Dance. Also, attack rabbits.
 
-![warning: attack rabbits ahead](img/warning.png)
+![warning: attack rabbits ahead](docs/img/warning.png)
 
 
 ## What's this business all about, then?
@@ -16,6 +16,9 @@ user attributes like organization or team membership or even things like how man
 repositories a user has or how many vowels are in their username. 
 
 Also, did I mention the attack rabbits?
+
+
+## Where do I start?
 
 See the [documentation](https://pages.charlesreid1.com/github-heroku-attack-rabbits)
 or [docs/index.md](docs/index.md).

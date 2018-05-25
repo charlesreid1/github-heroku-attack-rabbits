@@ -8,12 +8,23 @@ edit_uri: ""
 # give a title for each page
 pages:
   - 'Index' : 'index.md'
-
+  - 'Get Started with Heroku': 'heroku.md'
+  - 'Get Started with Github': 'github.md'
+  - 'Initialize Repository: Branches': 'repo.md'
+  - 'Create a Flask App using Flask-Dance': 'flask.md'
+  - 'Flask': 
+    - 'Authenticate users based on Github membership only': 'flask_auth_github.md'
+    - 'Authenticate users based on organization or team membership': 'flask_auth_org.md'
+    - 'Authenticate users based on some other criteria': 'flask_auth_other.md'
+    - 'Protection portions of the site': 'flask_auth_portions.md'
+  - 'Test Flask App Locally': 'flask_local.md'
+  - 'Deploying Flask App to Heroku': 'flask_heroku.md'
+  - 'Custom Domains': 'custom_domains.md'
 
 copyright: 'Copyright &copy; 2018 Charles Reid, released under the <a href="https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits/src/branch/master/LICENSE">WTFPL</a>.<br /><br />Many Bothans died to bring us this documentation.<br /><br />'
 
 docs_dir: docs
-site_dir: site
+site_dir: site/content
 
 theme:
 
