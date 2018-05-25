@@ -1,2 +1,8 @@
+# ignore mkdocs output/gh-pages branch
 site/
+
+# ignore secret branch
+secret/
+
+# ignore any makefiles
 Makefile
