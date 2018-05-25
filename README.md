@@ -17,7 +17,14 @@ Also, did I mention the attack rabbits?
 
 ## Where is everything?
 
-Two branches document how github-heroku-attack-rabbits work:
+Final pages:
+
+* The finished product (pages on Heroku protected by attack rabbits) 
+    is at [github-heroku-attack-rabbits.herokuapp.com](https://github-heroku-attack-rabbits.herokuapp.com)
+
+* The documentation is at [pages.charlesreid1.com/github-heroku-attack-rabbits](https://pages.charlesreid1.com/github-heroku-attack-rabbits)
+
+Two branches in this repo compose the github-heroku-attack-rabbits documentation:
 
 * (**YOU ARE HERE**) The [docs](https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits/src/branch/docs) branch 
     contains the files needed to generate the 
@@ -35,6 +42,8 @@ Two branches illustrate github-heroku-attack-rabbits in practice:
     but in practice this would be in a protected repository.
 
 * The [heroku-pages](https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits/src/branch/heroku-pages) branch
+    contains the content that is actually pushed to Heroku - that is, 
+    the final Flask app.
 
 
 ## Where do I start?
