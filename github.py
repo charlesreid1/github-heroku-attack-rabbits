@@ -94,8 +94,6 @@ def fishslap_even():
     return contents403
 
 
-#@app.route('/sillywalk/<path:path>')
-#def sillywalk_odd(path):
 @app.route('/sillywalk/')
 def sillywalk_odd():
     if not github.authorized:
@@ -107,7 +105,7 @@ def sillywalk_odd():
         if not even_vowels(username):
             #return "Hello {username}".format(username=username)
             sillywalk = os.path.join(STATIC_PATH,'sillywalk')
-            return send_from_directory(sillywalk, path)
+            return send_from_directory(sillywalk, 'index.html')
     
     return contents403
 
