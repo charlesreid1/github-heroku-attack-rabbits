@@ -8,5 +8,5 @@ Any Github user will be able to view these sites.
 
 Secret page 1: [`fish_slap`](fishslap.md)
 
-Secret page 2: [`silly_walk`](sillywalk.md)
+Secret page 2: [`silly_walks`](sillywalks.md)
 
