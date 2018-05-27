@@ -162,7 +162,7 @@
         },
         {
             "location": "/flask_local/",
-            "text": "Testing Flask App Locally\n\n\nWe set up the Github App to use a callback of \nhttps://localhost:5000/login/github/authorized\n\nso that we could test the app locally. Now it is time to test the app locally.\n\n\nThe application needs access to your Github app id and token. Those are provided \nvia the \nGITHUB_OAUTH_CLIENT_{ID,SECRET}\n environment variables. Set these \nwhen you run the actual python command to run the server:\n\n\n$ GITHUB_OAUTH_CLIENT_ID=\"xxxxxxx\" \\\n  GITHUB_OAUTH_CLIENT_SECRET=\"xxxxxxx\" \\\n  OAUTHLIB_INSECURE_TRANSPORT=true \\\n  python github.py\n\n\n\n\nThis runs the Flask server on port 5000, where it will wait for a visitor.\nThe way we have our application written in this example, the main \n/\n route\nwill redirect the user to a Github login screen immediately, but you could \nalso present the user with a friendly welcome page when they go to \n/\n, \nand only redirect them to the Github login prompt when they visit a \nURL like \n/login\n or \n/auth\n.\n\n\nOnce you run the above command, open the following URL in your browser:\n\n\nhttp://localhost:5000/\n\n\n\n\nNOTE: Make sure you are logged out of Github and that you clear your cookies \nif you are already logged in as one user and wish to authenticate as another.\nThe login is \nvery\n persistent so you may need to close and re-open your browser.\n\n\nVisiting the address above will result in your being redirected to a Github\nlogin page. Once you login, Github will redirect the user back to the \ngithub-heroku-attack-rabbits application with a token that the application \ncan use to perform actions on behalf of the user.",
+            "text": "Testing Flask App Locally\n\n\nWe set up the Github App to use a callback of \nhttps://localhost:5000/login/github/authorized\n\nso that we could test the app locally. Now it is time to test the app locally.\n\n\nThe application needs access to your Github app id and token. Those are provided \nvia the \nGITHUB_OAUTH_CLIENT_{ID,SECRET}\n environment variables. Set these \nwhen you run the actual python command to run the server:\n\n\n$ GITHUB_OAUTH_CLIENT_ID=\"xxxxxxx\" \\\n  GITHUB_OAUTH_CLIENT_SECRET=\"xxxxxxx\" \\\n  OAUTHLIB_INSECURE_TRANSPORT=true \\\n  python github.py\n\n\n\n\nThis runs the Flask server on port 5000, where it will wait for a visitor.\nThe way we have our application written in this example, the main \n/\n route\nwill redirect the user to a Github login screen immediately, but you could \nalso present the user with a friendly welcome page when they go to \n/\n, \nand only redirect them to the Github login prompt when they visit a \nURL like \n/login\n or \n/auth\n.\n\n\nOnce you run the above command, open the following URL in your browser:\n\n\nhttp://localhost:5000/\n\n\n\n\nNOTE: Make sure you are logged out of Github and that you clear your cookies \nif you are already logged in as one user and wish to authenticate as another.\nThe login is \nvery\n persistent so you may need to close and re-open your browser.\n\n\nVisiting the address above will result in your being redirected to a Github\nlogin page. Once you login, Github will redirect the user back to the \ngithub-heroku-attack-rabbits application with a token that the application \ncan use to perform actions on behalf of the user.\n\n\nNext Step?\n\n\nIf the app works, the next step is to deploy to Heroku.",
             "title": "Test Flask App Locally"
         },
         {
@@ -171,28 +171,43 @@
             "title": "Testing Flask App Locally"
         },
         {
+            "location": "/flask_local/#next-step",
+            "text": "If the app works, the next step is to deploy to Heroku.",
+            "title": "Next Step?"
+        },
+        {
             "location": "/flask_heroku/",
-            "text": "Deploying to Heroku\n\n\nOnce we have debugged the Flask app and we are happy with it,\nwe are ready to deploy it to Heroku. To deploy content to Heroku,\nwe just add our Heroku project as a git remote (see the \nheroku\n\npage for how to do that) and then push to the master branch of the \nheroku remote git repo. Changes are pulled in by Heroku and the \napp is restarted each time you run git push.\n\n\nHeroku Login\n\n\nFrom the \nsite/\n directory containing the contents of the \nheroku-pages\n branch,\nthat is, containing the Python flask app, log in to Heroku:\n\n\nheroku login\n\n\n\n\nAdd Heroku Remote\n\n\nNow have Heroku add the proper git remote address:\n\n\nheroku git:remote -a <heroku-app-name>\n\n\n\n\nNow you're ready to deploy to Heroku. \n\n\nDeploy to Heroku\n\n\nDouble check your app is ready, then deploy:\n\n\ngit push heroku heroku-pages:master\n\n\n\n\nThis will push the local branch \nheroku-pages\n to\nthe remote branch \nmaster\n on the \nheroku\n remote.\nThis should begin a pre-commit hook where Heroku\ncompiles your Python app. You should get the green\nlight, if you tested your app locally and everything\nwas good to go.\n\n\nCheck Your Heroku App\n\n\nYour Heroku app will be available at \n\n\nhttps://<heroku-app-name>.herokuapp.com\n\n\n\n\nYou should see your Python flask app\nshow up shortly.",
+            "text": "Deploying to Heroku\n\n\nOnce we have debugged the Flask app and we are happy with it,\nwe are ready to deploy it to Heroku. \n\n\nRepository Setup\n\n\nTo do this, you should set up your repo as follows:\n\n\nClone the repo:\n\n\n$ git clone https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits.git\n\n\n\n\nThe repo has the following structure:\n\n\ngithub-heroku-attack-rabbits/\n            LICENSE\n            README.md\n            mkdocs.yml\n            docs/\n                index.md\n                ...\n            mkdocs-material/\n                ...\n\n\n\n\nNow, inside the repo, clone the repo again,\nbut this time clone the \nheroku-pages\n branch\nto the \nsite/\n directory:\n\n\n$ cd github-heroku-attack-rabbits/\n$ git clone -b heroku-pages https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits.git site\n\n\n\n\nHeroku Deploy Process\n\n\nTo deploy content to Heroku, we add our Heroku project as a git remote \n(see the \nheroku\n page for how to do that) and then push to \nto the master branch of the heroku remote git repo. Changes are pulled \nin by Heroku and the app is restarted each time you run \ngit push\n.\n\n\nWe walk through the steps below.\n\n\nHeroku Login\n\n\nFrom the \nsite/\n directory containing the contents of the \nheroku-pages\n branch,\nthat is, containing the Python flask app, log in to Heroku:\n\n\n$ heroku login\n\n\n\n\nAdd Heroku Remote to \nheroku-pages\n Branch\n\n\nNow have Heroku add the proper git remote address:\n\n\n$ heroku git:remote -a <heroku-app-name>\n\n\n\n\nNow you're ready to deploy to Heroku. \n\n\nDeploy to Heroku\n\n\nDouble check your app is ready, then deploy:\n\n\n$ git push heroku heroku-pages:master\n\n\n\n\nThis will push the local branch \nheroku-pages\n to\nthe remote branch \nmaster\n on the \nheroku\n remote.\nThis should begin a pre-commit hook where Heroku\ncompiles your Python app. You should get the green\nlight, if you tested your app locally and everything\nwas good to go.\n\n\nCheck Your Heroku App\n\n\nYour Heroku app will be available at \n\n\nhttps://<heroku-app-name>.herokuapp.com\n\n\n\n\nYou should see your Python flask app\nshow up shortly.",
             "title": "Deploying Flask App to Heroku"
         },
         {
             "location": "/flask_heroku/#deploying-to-heroku",
-            "text": "Once we have debugged the Flask app and we are happy with it,\nwe are ready to deploy it to Heroku. To deploy content to Heroku,\nwe just add our Heroku project as a git remote (see the  heroku \npage for how to do that) and then push to the master branch of the \nheroku remote git repo. Changes are pulled in by Heroku and the \napp is restarted each time you run git push.",
+            "text": "Once we have debugged the Flask app and we are happy with it,\nwe are ready to deploy it to Heroku.",
             "title": "Deploying to Heroku"
         },
         {
+            "location": "/flask_heroku/#repository-setup",
+            "text": "To do this, you should set up your repo as follows:  Clone the repo:  $ git clone https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits.git  The repo has the following structure:  github-heroku-attack-rabbits/\n            LICENSE\n            README.md\n            mkdocs.yml\n            docs/\n                index.md\n                ...\n            mkdocs-material/\n                ...  Now, inside the repo, clone the repo again,\nbut this time clone the  heroku-pages  branch\nto the  site/  directory:  $ cd github-heroku-attack-rabbits/\n$ git clone -b heroku-pages https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits.git site",
+            "title": "Repository Setup"
+        },
+        {
+            "location": "/flask_heroku/#heroku-deploy-process",
+            "text": "To deploy content to Heroku, we add our Heroku project as a git remote \n(see the  heroku  page for how to do that) and then push to \nto the master branch of the heroku remote git repo. Changes are pulled \nin by Heroku and the app is restarted each time you run  git push .  We walk through the steps below.",
+            "title": "Heroku Deploy Process"
+        },
+        {
             "location": "/flask_heroku/#heroku-login",
-            "text": "From the  site/  directory containing the contents of the  heroku-pages  branch,\nthat is, containing the Python flask app, log in to Heroku:  heroku login",
+            "text": "From the  site/  directory containing the contents of the  heroku-pages  branch,\nthat is, containing the Python flask app, log in to Heroku:  $ heroku login",
             "title": "Heroku Login"
         },
         {
-            "location": "/flask_heroku/#add-heroku-remote",
-            "text": "Now have Heroku add the proper git remote address:  heroku git:remote -a <heroku-app-name>  Now you're ready to deploy to Heroku.",
-            "title": "Add Heroku Remote"
+            "location": "/flask_heroku/#add-heroku-remote-to-heroku-pages-branch",
+            "text": "Now have Heroku add the proper git remote address:  $ heroku git:remote -a <heroku-app-name>  Now you're ready to deploy to Heroku.",
+            "title": "Add Heroku Remote to heroku-pages Branch"
         },
         {
             "location": "/flask_heroku/#deploy-to-heroku",
-            "text": "Double check your app is ready, then deploy:  git push heroku heroku-pages:master  This will push the local branch  heroku-pages  to\nthe remote branch  master  on the  heroku  remote.\nThis should begin a pre-commit hook where Heroku\ncompiles your Python app. You should get the green\nlight, if you tested your app locally and everything\nwas good to go.",
+            "text": "Double check your app is ready, then deploy:  $ git push heroku heroku-pages:master  This will push the local branch  heroku-pages  to\nthe remote branch  master  on the  heroku  remote.\nThis should begin a pre-commit hook where Heroku\ncompiles your Python app. You should get the green\nlight, if you tested your app locally and everything\nwas good to go.",
             "title": "Deploy to Heroku"
         },
         {

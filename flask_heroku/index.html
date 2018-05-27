@@ -410,6 +410,20 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#repository-setup" title="Repository Setup" class="md-nav__link">
+    Repository Setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#heroku-deploy-process" title="Heroku Deploy Process" class="md-nav__link">
+    Heroku Deploy Process
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#heroku-login" title="Heroku Login" class="md-nav__link">
     Heroku Login
   </a>
@@ -417,8 +431,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#add-heroku-remote" title="Add Heroku Remote" class="md-nav__link">
-    Add Heroku Remote
+  <a href="#add-heroku-remote-to-heroku-pages-branch" title="Add Heroku Remote to heroku-pages Branch" class="md-nav__link">
+    Add Heroku Remote to heroku-pages Branch
   </a>
   
 </li>
@@ -481,6 +495,20 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#repository-setup" title="Repository Setup" class="md-nav__link">
+    Repository Setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#heroku-deploy-process" title="Heroku Deploy Process" class="md-nav__link">
+    Heroku Deploy Process
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#heroku-login" title="Heroku Login" class="md-nav__link">
     Heroku Login
   </a>
@@ -488,8 +516,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#add-heroku-remote" title="Add Heroku Remote" class="md-nav__link">
-    Add Heroku Remote
+  <a href="#add-heroku-remote-to-heroku-pages-branch" title="Add Heroku Remote to heroku-pages Branch" class="md-nav__link">
+    Add Heroku Remote to heroku-pages Branch
   </a>
   
 </li>
@@ -527,26 +555,53 @@
                 
                 <h1 id="deploying-to-heroku">Deploying to Heroku</h1>
 <p>Once we have debugged the Flask app and we are happy with it,
-we are ready to deploy it to Heroku. To deploy content to Heroku,
-we just add our Heroku project as a git remote (see the <a href="../heroku/">heroku</a>
-page for how to do that) and then push to the master branch of the 
-heroku remote git repo. Changes are pulled in by Heroku and the 
-app is restarted each time you run git push.</p>
+we are ready to deploy it to Heroku. </p>
+<h2 id="repository-setup">Repository Setup</h2>
+<p>To do this, you should set up your repo as follows:</p>
+<p>Clone the repo:</p>
+<pre><code>$ git clone https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits.git
+</code></pre>
+
+<p>The repo has the following structure:</p>
+<pre><code>github-heroku-attack-rabbits/
+            LICENSE
+            README.md
+            mkdocs.yml
+            docs/
+                index.md
+                ...
+            mkdocs-material/
+                ...
+</code></pre>
+
+<p>Now, inside the repo, clone the repo again,
+but this time clone the <code>heroku-pages</code> branch
+to the <code>site/</code> directory:</p>
+<pre><code>$ cd github-heroku-attack-rabbits/
+$ git clone -b heroku-pages https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits.git site
+</code></pre>
+
+<h2 id="heroku-deploy-process">Heroku Deploy Process</h2>
+<p>To deploy content to Heroku, we add our Heroku project as a git remote 
+(see the <a href="../heroku/">heroku</a> page for how to do that) and then push to 
+to the master branch of the heroku remote git repo. Changes are pulled 
+in by Heroku and the app is restarted each time you run <code>git push</code>.</p>
+<p>We walk through the steps below.</p>
 <h2 id="heroku-login">Heroku Login</h2>
 <p>From the <code>site/</code> directory containing the contents of the <code>heroku-pages</code> branch,
 that is, containing the Python flask app, log in to Heroku:</p>
-<pre><code>heroku login
+<pre><code>$ heroku login
 </code></pre>
 
-<h2 id="add-heroku-remote">Add Heroku Remote</h2>
+<h2 id="add-heroku-remote-to-heroku-pages-branch">Add Heroku Remote to <code>heroku-pages</code> Branch</h2>
 <p>Now have Heroku add the proper git remote address:</p>
-<pre><code>heroku git:remote -a &lt;heroku-app-name&gt;
+<pre><code>$ heroku git:remote -a &lt;heroku-app-name&gt;
 </code></pre>
 
 <p>Now you're ready to deploy to Heroku. </p>
 <h2 id="deploy-to-heroku">Deploy to Heroku</h2>
 <p>Double check your app is ready, then deploy:</p>
-<pre><code>git push heroku heroku-pages:master
+<pre><code>$ git push heroku heroku-pages:master
 </code></pre>
 
 <p>This will push the local branch <code>heroku-pages</code> to
