@@ -36,3 +36,7 @@ login page. Once you login, Github will redirect the user back to the
 github-heroku-attack-rabbits application with a token that the application 
 can use to perform actions on behalf of the user.
 
+## Next Step?
+
+If the app works, the next step is to deploy to Heroku.
+
