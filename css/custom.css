@@ -7,4 +7,7 @@ div.body {
 .md-typeset pre {
     background-color: #dedede;
 }
-
+div.md-source__icon {
+    hidden: true;
+    visible: false;
+}
