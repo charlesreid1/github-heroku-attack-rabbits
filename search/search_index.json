@@ -37,33 +37,33 @@
         },
         {
             "location": "/heroku/",
-            "text": "create heroku app\n\n\nHeroku toolbelt\n\n\nHeroku offers a really nice command line interface tool called\nHeroku Toolbelt. It is available through Homebrew and Aptitude:\n\n\n$ brew install heroku   # from Mac\n\n$ apt-get install heroku    # from Ubuntu\n\n\n\n\nIt is then available on the command line as \nheroku\n.\n\n\nThe first thing you should do is authenticate with\nyour Heroku account by running\n\n\n$ heroku login\n\n\n\n\nWe will use this command line application for the following tasks:\n\n\n\n\nCreate a git remote to point to the right Heroku git remote location\n\n\nSet environment variables (for e.g. secret keys) on the remote Heroku instance\n\n\nGet information (logs, status, etc.) about your Heroku app\n\n\n\n\nWe will cover these commands as they come up.\n\n\nCreate heroku app\n\n\nStart by creating a heroku app.\n\n\n\n\nEach heroku app must have a unique name\n\n\nEach heroku app creates a remote git repo\n\n\nMaster branch is what Heroku deploys publicly on herokuapps.com\n\n\nYou will also need heroku CLI to link your github repo to your heroku app\n\n\n\n\nWhere heroku app lives\n\n\nSuppose you are creating an app called \nmy-cool-app\n\non heroku. Then your application will be hosted by \nHeroku and will be available at the URL:\n\n\nhttps://my-cool-app.herokuapp.com\n\n\n\n\nHow heroku apps works\n\n\nIf you have used Github Pages before, Heroku uses a similar\nmodel (live hosting one particular branch of a git repository).\nHowever, Heroku is different because you can run dynamic scripts\nusing Python, Ruby, PHP, etc.\n\n\nTo change the content of your Heroku app, just change the contents\nof the repository, and push to master (push to the master branch of\nthe remote Heroku repository).\n\n\nYou will need to structure your repository carefully.\nThat's what this page is here to help you do.\nHeroku can figure out the rest from there.",
+            "text": "Create a Heroku app\n\n\nBefore you begin: install Heroku toolbelt\n\n\nHeroku offers a really nice command line interface tool called\nHeroku Toolbelt. It is available through Homebrew and Aptitude:\n\n\n$ brew install Heroku   # from Mac\n\n$ apt-get install Heroku    # from Ubuntu\n\n\n\n\nIt will then be available on the command line as \nHeroku\n.\n\n\nThe first thing you should do is authenticate with\nyour Heroku account by running\n\n\n$ heroku login\n\n\n\n\nWe will use this command line application for the following tasks:\n\n\n\n\nCreate a git remote to point to the right Heroku git remote location\n\n\nSet environment variables (for e.g. secret keys) on the remote Heroku instance\n\n\nGet information (logs, status, etc.) about your Heroku app\n\n\n\n\nWe will cover these commands as they come up.\n\n\nCreating a Heroku app\n\n\nStart by creating a Heroku app.\n\n\n\n\nEach Heroku app must have a unique name\n\n\nEach Heroku app creates a remote git repo\n\n\nMaster branch is what Heroku deploys publicly on Herokuapps.com\n\n\nYou will also need Heroku CLI to link your github repo to your Heroku app\n\n\n\n\nWhere Heroku apps live\n\n\nSuppose you are creating an app called \nmy-cool-app\n\non Heroku. Then your application will be hosted by \nHeroku and will be available at the URL:\n\n\nhttps://my-cool-app.herokuapp.com\n\n\n\n\nHow Heroku apps work\n\n\nIf you have used Github Pages before, Heroku uses a similar\nmodel (live hosting one particular branch of a git repository).\nHowever, Heroku is different because you can run dynamic scripts\nusing Python, Ruby, PHP, etc.\n\n\nTo change the content of your Heroku app, just change the contents\nof the repository, and push to master (push to the master branch of\nthe remote Heroku repository).\n\n\nYou will need to structure your repository carefully.\nThat's what this page is here to help you do.\nHeroku can figure out the rest from there.",
             "title": "Get Started with Heroku"
         },
         {
-            "location": "/heroku/#create-heroku-app",
+            "location": "/heroku/#create-a-heroku-app",
             "text": "",
-            "title": "create heroku app"
+            "title": "Create a Heroku app"
         },
         {
-            "location": "/heroku/#heroku-toolbelt",
-            "text": "Heroku offers a really nice command line interface tool called\nHeroku Toolbelt. It is available through Homebrew and Aptitude:  $ brew install heroku   # from Mac\n\n$ apt-get install heroku    # from Ubuntu  It is then available on the command line as  heroku .  The first thing you should do is authenticate with\nyour Heroku account by running  $ heroku login  We will use this command line application for the following tasks:   Create a git remote to point to the right Heroku git remote location  Set environment variables (for e.g. secret keys) on the remote Heroku instance  Get information (logs, status, etc.) about your Heroku app   We will cover these commands as they come up.",
-            "title": "Heroku toolbelt"
+            "location": "/heroku/#before-you-begin-install-heroku-toolbelt",
+            "text": "Heroku offers a really nice command line interface tool called\nHeroku Toolbelt. It is available through Homebrew and Aptitude:  $ brew install Heroku   # from Mac\n\n$ apt-get install Heroku    # from Ubuntu  It will then be available on the command line as  Heroku .  The first thing you should do is authenticate with\nyour Heroku account by running  $ heroku login  We will use this command line application for the following tasks:   Create a git remote to point to the right Heroku git remote location  Set environment variables (for e.g. secret keys) on the remote Heroku instance  Get information (logs, status, etc.) about your Heroku app   We will cover these commands as they come up.",
+            "title": "Before you begin: install Heroku toolbelt"
         },
         {
-            "location": "/heroku/#create-heroku-app_1",
-            "text": "Start by creating a heroku app.   Each heroku app must have a unique name  Each heroku app creates a remote git repo  Master branch is what Heroku deploys publicly on herokuapps.com  You will also need heroku CLI to link your github repo to your heroku app",
-            "title": "Create heroku app"
+            "location": "/heroku/#creating-a-heroku-app",
+            "text": "Start by creating a Heroku app.   Each Heroku app must have a unique name  Each Heroku app creates a remote git repo  Master branch is what Heroku deploys publicly on Herokuapps.com  You will also need Heroku CLI to link your github repo to your Heroku app",
+            "title": "Creating a Heroku app"
         },
         {
-            "location": "/heroku/#where-heroku-app-lives",
-            "text": "Suppose you are creating an app called  my-cool-app \non heroku. Then your application will be hosted by \nHeroku and will be available at the URL:  https://my-cool-app.herokuapp.com",
-            "title": "Where heroku app lives"
+            "location": "/heroku/#where-heroku-apps-live",
+            "text": "Suppose you are creating an app called  my-cool-app \non Heroku. Then your application will be hosted by \nHeroku and will be available at the URL:  https://my-cool-app.herokuapp.com",
+            "title": "Where Heroku apps live"
         },
         {
-            "location": "/heroku/#how-heroku-apps-works",
+            "location": "/heroku/#how-heroku-apps-work",
             "text": "If you have used Github Pages before, Heroku uses a similar\nmodel (live hosting one particular branch of a git repository).\nHowever, Heroku is different because you can run dynamic scripts\nusing Python, Ruby, PHP, etc.  To change the content of your Heroku app, just change the contents\nof the repository, and push to master (push to the master branch of\nthe remote Heroku repository).  You will need to structure your repository carefully.\nThat's what this page is here to help you do.\nHeroku can figure out the rest from there.",
-            "title": "How heroku apps works"
+            "title": "How Heroku apps work"
         },
         {
             "location": "/github/",

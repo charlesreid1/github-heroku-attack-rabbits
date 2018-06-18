@@ -97,7 +97,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <a href="#create-heroku-app" tabindex="1" class="md-skip">
+      <a href="#create-a-heroku-app" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -278,30 +278,36 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#heroku-toolbelt" title="Heroku toolbelt" class="md-nav__link">
-    Heroku toolbelt
+  <a href="#before-you-begin-install-heroku-toolbelt" title="Before you begin: install Heroku toolbelt" class="md-nav__link">
+    Before you begin: install Heroku toolbelt
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-heroku-app_1" title="Create heroku app" class="md-nav__link">
-    Create heroku app
+  <a href="#creating-a-heroku-app" title="Creating a Heroku app" class="md-nav__link">
+    Creating a Heroku app
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#where-heroku-app-lives" title="Where heroku app lives" class="md-nav__link">
-    Where heroku app lives
+  <a href="#where-heroku-apps-live" title="Where Heroku apps live" class="md-nav__link">
+    Where Heroku apps live
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-heroku-apps-work" title="How Heroku apps work" class="md-nav__link">
+    How Heroku apps work
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#how-heroku-apps-works" title="How heroku apps works" class="md-nav__link">
-    How heroku apps works
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -481,30 +487,36 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#heroku-toolbelt" title="Heroku toolbelt" class="md-nav__link">
-    Heroku toolbelt
+  <a href="#before-you-begin-install-heroku-toolbelt" title="Before you begin: install Heroku toolbelt" class="md-nav__link">
+    Before you begin: install Heroku toolbelt
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-heroku-app_1" title="Create heroku app" class="md-nav__link">
-    Create heroku app
+  <a href="#creating-a-heroku-app" title="Creating a Heroku app" class="md-nav__link">
+    Creating a Heroku app
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#where-heroku-app-lives" title="Where heroku app lives" class="md-nav__link">
-    Where heroku app lives
+  <a href="#where-heroku-apps-live" title="Where Heroku apps live" class="md-nav__link">
+    Where Heroku apps live
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-heroku-apps-work" title="How Heroku apps work" class="md-nav__link">
+    How Heroku apps work
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#how-heroku-apps-works" title="How heroku apps works" class="md-nav__link">
-    How heroku apps works
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -525,16 +537,16 @@
               
                 
                 
-                <h1 id="create-heroku-app">create heroku app</h1>
-<h3 id="heroku-toolbelt">Heroku toolbelt</h3>
+                <h1 id="create-a-heroku-app">Create a Heroku app</h1>
+<h2 id="before-you-begin-install-heroku-toolbelt">Before you begin: install Heroku toolbelt</h2>
 <p>Heroku offers a really nice command line interface tool called
 Heroku Toolbelt. It is available through Homebrew and Aptitude:</p>
-<pre><code class="plain">$ brew install heroku   # from Mac
+<pre><code class="plain">$ brew install Heroku   # from Mac
 
-$ apt-get install heroku    # from Ubuntu
+$ apt-get install Heroku    # from Ubuntu
 </code></pre>
 
-<p>It is then available on the command line as <code>heroku</code>.</p>
+<p>It will then be available on the command line as <code>Heroku</code>.</p>
 <p>The first thing you should do is authenticate with
 your Heroku account by running</p>
 <pre><code class="plain">$ heroku login
@@ -547,22 +559,22 @@ your Heroku account by running</p>
 <li>Get information (logs, status, etc.) about your Heroku app</li>
 </ul>
 <p>We will cover these commands as they come up.</p>
-<h3 id="create-heroku-app_1">Create heroku app</h3>
-<p>Start by creating a heroku app.</p>
+<h2 id="creating-a-heroku-app">Creating a Heroku app</h2>
+<p>Start by creating a Heroku app.</p>
 <ul>
-<li>Each heroku app must have a unique name</li>
-<li>Each heroku app creates a remote git repo</li>
-<li>Master branch is what Heroku deploys publicly on herokuapps.com</li>
-<li>You will also need heroku CLI to link your github repo to your heroku app</li>
+<li>Each Heroku app must have a unique name</li>
+<li>Each Heroku app creates a remote git repo</li>
+<li>Master branch is what Heroku deploys publicly on Herokuapps.com</li>
+<li>You will also need Heroku CLI to link your github repo to your Heroku app</li>
 </ul>
-<h3 id="where-heroku-app-lives">Where heroku app lives</h3>
+<h2 id="where-heroku-apps-live">Where Heroku apps live</h2>
 <p>Suppose you are creating an app called <code>my-cool-app</code>
-on heroku. Then your application will be hosted by 
+on Heroku. Then your application will be hosted by 
 Heroku and will be available at the URL:</p>
 <pre><code class="plain">https://my-cool-app.herokuapp.com
 </code></pre>
 
-<h3 id="how-heroku-apps-works">How heroku apps works</h3>
+<h3 id="how-heroku-apps-work">How Heroku apps work</h3>
 <p>If you have used Github Pages before, Heroku uses a similar
 model (live hosting one particular branch of a git repository).
 However, Heroku is different because you can run dynamic scripts
