@@ -66,7 +66,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="blue-grey" data-md-color-accent="blue-grey">
+    <body dir="ltr" data-md-color-primary="red" data-md-color-accent="red">
   
     <svg class="md-svg">
       <defs>
@@ -563,13 +563,13 @@ vowels a user has in their username. </p>
 <p>Two branches in this repo compose the github-heroku-attack-rabbits documentation:</p>
 <ul>
 <li>
-<p>(<strong>YOU ARE HERE</strong>) The <a href="https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits/src/branch/docs">docs</a> branch 
-    contains the files needed to generate the 
+<p>(<strong>YOU ARE HERE</strong>) The <a href="https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits/src/branch/docs"><code>docs</code></a>
+    branch contains the files needed to generate the 
     <a href="https://pages.charlesreid1.com/github-heroku-attack-rabbits">github-heroku-attack-rabbits documentation site</a>.</p>
 </li>
 <li>
-<p>The <a href="https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits/src/branch/gh-pages">gh-pages</a> branch
-    contains the static files generated from the documentation.
+<p>The <a href="https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits/src/branch/gh-pages"><code>gh-pages</code></a>
+    branch contains the static files generated from the documentation.
     The contents of this branch compose the 
     <a href="https://pages.charlesreid1.com/github-heroku-attack-rabbits">github-heroku-attack-rabbits documentation site</a>.</p>
 </li>
@@ -577,14 +577,20 @@ vowels a user has in their username. </p>
 <p>Two branches illustrate github-heroku-attack-rabbits in practice:</p>
 <ul>
 <li>
-<p>The <a href="https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits/src/branch/secret">secret</a> branch contains the files needed to create the secret page. 
-    This repository is public, so obviously these aren't <em>actually</em> secret,
-    but in practice this would be in a protected repository.</p>
+<p>The <a href="https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits/src/branch/secret"><code>secret</code></a>
+    branch contains the files needed to create the secret page. (This is the
+    "secret page source branch", so to speak.)
+    This repository, the one you are looking at right now, is public, so of course
+    these will not really be secret, but in practice the <code>secret</code> branch would
+    live in a private repository.</p>
 </li>
 <li>
-<p>The <a href="https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits/src/branch/heroku-pages">heroku-pages</a> branch
-    contains the content that is actually pushed to Heroku - that is, 
-    the final Flask app.</p>
+<p>The <a href="https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits/src/branch/heroku-pages"><code>heroku-pages</code></a>
+    branch contains the content that is actually pushed to Heroku - that is, 
+    the final Flask app. This includes the Flask app (Python program), in
+    addition to files that tell Heroku how to run the app,
+    plus gunicorn "middleware" scripts, plus the static content that 
+    Flask is supposed to serve up (whatever that happens to be).</p>
 </li>
 </ul>
 <h2 id="contents">Contents</h2>
