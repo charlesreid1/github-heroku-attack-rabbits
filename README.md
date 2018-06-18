@@ -12,7 +12,7 @@ repositories a user has or how many vowels are in their username.
 
 Also, did I mention the attack rabbits?
 
-![warning: attack rabbits ahead](img/warning.png)
+![warning: attack rabbits ahead](docs/img/warning.png)
 
 
 ## Where is everything?
