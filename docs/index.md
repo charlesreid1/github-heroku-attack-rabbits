@@ -49,7 +49,9 @@ Two branches illustrate github-heroku-attack-rabbits in practice:
     the final Flask app. This includes the Flask app (Python program), in
     addition to files that tell Heroku how to run the app,
     plus gunicorn "middleware" scripts, plus the static content that 
-    Flask is supposed to serve up (whatever that happens to be).
+    Flask is supposed to serve up (whatever that happens to be - in our case,
+    we will cover an mkdocs documentation site that is behind an authentication
+    layer.).
 
 
 ## Contents

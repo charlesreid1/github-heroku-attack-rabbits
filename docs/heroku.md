@@ -6,7 +6,7 @@
 Heroku offers a really nice command line interface tool called
 Heroku Toolbelt. It is available through Homebrew and Aptitude:
 
-```
+```plain
 $ brew install heroku   # from Mac
 
 $ apt-get install heroku    # from Ubuntu
@@ -17,7 +17,7 @@ It is then available on the command line as `heroku`.
 The first thing you should do is authenticate with
 your Heroku account by running
 
-```
+```plain
 $ heroku login
 ```
 
@@ -46,7 +46,7 @@ Suppose you are creating an app called `my-cool-app`
 on heroku. Then your application will be hosted by 
 Heroku and will be available at the URL:
 
-```
+```plain
 https://my-cool-app.herokuapp.com
 ```
 

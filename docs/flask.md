@@ -6,7 +6,7 @@ The best thing to do here is just to walk you through the script.
 
 Import statements:
 
-```
+```python
 import os, json
 from os.path import join, isfile, isdir
 from werkzeug.contrib.fixers import ProxyFix
@@ -21,7 +21,7 @@ via `/login`.
 
 Set paths for static content:
 
-```
+```python
 PROJECT_ROOT = os.path.dirname(os.path.realpath(__file__))
 STATIC_PATH = 'content'
 ```
@@ -35,7 +35,7 @@ To find this, after you log in, click your profile photo in the
 upper right > Settings > Developer Settings > OAuth Apps > click the 
 name for your OAuth app.
 
-```
+```python
 app = Flask(__name__)
 
 # this worked locally, but not on heroku
@@ -56,7 +56,7 @@ OAuth dance.
 There are several similar methods to generate blueprints for 
 authenticating with other APIs.
 
-```
+```python
 github_bp = make_github_blueprint(
                         client_id = os.environ.get('GITHUB_OAUTH_CLIENT_ID'),
                         client_secret = os.environ.get('GITHUB_OAUTH_CLIENT_SECRET'),
@@ -81,7 +81,7 @@ Deal with the `/` route first:
 * Use the `github` object to call the Github API directly.
 * Decide what to do from there.
 
-```
+```python
 @app.route('/')
 def index():
     if not github.authorized:
@@ -99,7 +99,7 @@ The next line is important to how the server works:
 if all of the criteria above have been met, we return 
 a static file:
 
-```
+```python
                 return send_from_directory(STATIC_PATH, 'index.html')
 ```
 
@@ -128,7 +128,7 @@ If the user asks for a non-existent file, a 404 error is shown.
 If the user is not allowed to view the content, they will face 
 the bowel-emptying terrors of the 403 error.
 
-```
+```python
 @app.route('/<path:path>')
 def catch_all(path):
     
@@ -162,7 +162,7 @@ def catch_all(path):
 
 Last, set a default 404 handler, and run the app:
 
-```
+```python
 @app.errorhandler(404)
 def oops(e):
     return contents404

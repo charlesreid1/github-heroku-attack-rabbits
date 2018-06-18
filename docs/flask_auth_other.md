@@ -7,7 +7,7 @@ between 5 and 7 letters.
 Here is the relevant method that serves up `index.html` 
 if the user's Github handle is 5-7 letters long:
 
-```
+```python
 @app.route('/')
 def index():
     if not github.authorized:

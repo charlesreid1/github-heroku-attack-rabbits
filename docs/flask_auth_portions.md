@@ -14,7 +14,7 @@ The `org_only` folder should only be accessible to your organization, `Colorful 
 
 The main site (i.e., all other files) should be publicly accessible.
 
-```
+```python
 @app.route('/')
 def index():
     return send_from_directory(STATIC_PATH, 'index.html')

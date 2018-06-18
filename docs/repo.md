@@ -33,7 +33,7 @@ If you wish to build the site in order to deploy it to Heroku,
 you should clone the `master` branch (preparing to make the
 content for your attack sheep-protected page):
 
-```
+```plain
 $ git clone -b master https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits.git
 $ cd github-heroku-attack-rabbits
 ```
@@ -42,20 +42,20 @@ Once you are *inside* the master branch, clone the repo again,
 but this time clone the `heroku-pages` branch, and clone it 
 to the `site/` folder:
 
-```
+```plain
 $ git clone -b heroku-pages https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits.git site
 $ cd site
 ```
 
 Now you will want to set up the Heroku remote:
 
-```
+```plain
 $ heroku git:remote -a my-cool-project
 ```
 
 The layout should now be:
 
-```
+```plain
 my-cool-project-repo/   <-- my-cool-project repo pointing to master branch
 
         docs/            \
@@ -85,26 +85,4 @@ my-cool-project-repo/   <-- my-cool-project repo pointing to master branch
 Once you have things set up according to the instructions and diagram above,
 you're ready to run the push-to-deploy workflow and start running your secret
 site on Heroku.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,4 +1,4 @@
-## get started with github
+## Get started with Github
 
 We mentioned on the [heroku](heroku.md) page that heroku
 creates a remote git repository to hold the files you 
@@ -49,7 +49,9 @@ get more information about your app.
 
 The most important is the **callback URL**, which should be set to:
 
-    http://localhost:5000/login/github/authorized
+```
+http://localhost:5000/login/github/authorized
+```
 
 This is for testing locally *only*.
 

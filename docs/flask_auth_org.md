@@ -5,7 +5,7 @@ conditional on membership in an organization (in this
 example, membership in the `rainbow-mind-machine` organization
 is required for access):
 
-```
+```python
 @app.route('/')
 def index():
     if not github.authorized:

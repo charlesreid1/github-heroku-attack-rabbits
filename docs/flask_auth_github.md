@@ -8,7 +8,7 @@ people on different parts of a site.
 Here is the relevant method that serves up `index.html` 
 if the user is authenticated:
 
-```
+```python
 @app.route('/')
 def index():
     if not github.authorized:

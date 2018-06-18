@@ -7,7 +7,7 @@ The application needs access to your Github app id and token. Those are provided
 via the `GITHUB_OAUTH_CLIENT_{ID,SECRET}` environment variables. Set these 
 when you run the actual python command to run the server:
 
-```
+```plain
 $ GITHUB_OAUTH_CLIENT_ID="xxxxxxx" \
   GITHUB_OAUTH_CLIENT_SECRET="xxxxxxx" \
   OAUTHLIB_INSECURE_TRANSPORT=true \
@@ -23,7 +23,7 @@ URL like `/login` or `/auth`.
 
 Once you run the above command, open the following URL in your browser:
 
-```
+```plain
 http://localhost:5000/
 ```
 

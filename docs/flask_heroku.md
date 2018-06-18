@@ -10,13 +10,13 @@ To do this, you should set up your repo as follows:
 
 Clone the repo:
 
-```
+```plain
 $ git clone https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits.git
 ```
 
 The repo has the following structure:
 
-```
+```plain
 github-heroku-attack-rabbits/
             LICENSE
             README.md
@@ -32,7 +32,7 @@ Now, inside the repo, clone the repo again,
 but this time clone the `heroku-pages` branch
 to the `site/` directory:
 
-```
+```plain
 $ cd github-heroku-attack-rabbits/
 $ git clone -b heroku-pages https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits.git site
 ```
@@ -53,7 +53,7 @@ We walk through the steps below.
 From the `site/` directory containing the contents of the `heroku-pages` branch,
 that is, containing the Python flask app, log in to Heroku:
 
-```
+```plain
 $ heroku login
 ```
 
@@ -62,7 +62,7 @@ $ heroku login
 
 Now have Heroku add the proper git remote address:
 
-```
+```plain
 $ heroku git:remote -a <heroku-app-name>
 ```
 
@@ -73,7 +73,7 @@ Now you're ready to deploy to Heroku.
 
 Double check your app is ready, then deploy:
 
-```
+```plain
 $ git push heroku heroku-pages:master
 ```
 
