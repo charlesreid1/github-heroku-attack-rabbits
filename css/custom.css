@@ -8,6 +8,5 @@ div.body {
     background-color: #dedede;
 }
 div.md-source__icon {
-    hidden: true;
-    visible: false;
+    visibility: hidden;
 }
