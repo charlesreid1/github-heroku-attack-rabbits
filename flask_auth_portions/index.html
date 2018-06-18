@@ -449,7 +449,7 @@ a bit more.</p>
 <p>The <code>team_only</code> folder should only be accessible to your team, <code>Team Gold</code>.</p>
 <p>The <code>org_only</code> folder should only be accessible to your organization, <code>Colorful Colors</code>.</p>
 <p>The main site (i.e., all other files) should be publicly accessible.</p>
-<pre><code>@app.route('/')
+<pre><code class="python">@app.route('/')
 def index():
     return send_from_directory(STATIC_PATH, 'index.html')
 

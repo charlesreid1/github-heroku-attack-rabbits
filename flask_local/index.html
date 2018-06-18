@@ -489,7 +489,7 @@ so that we could test the app locally. Now it is time to test the app locally.</
 <p>The application needs access to your Github app id and token. Those are provided 
 via the <code>GITHUB_OAUTH_CLIENT_{ID,SECRET}</code> environment variables. Set these 
 when you run the actual python command to run the server:</p>
-<pre><code>$ GITHUB_OAUTH_CLIENT_ID=&quot;xxxxxxx&quot; \
+<pre><code class="plain">$ GITHUB_OAUTH_CLIENT_ID=&quot;xxxxxxx&quot; \
   GITHUB_OAUTH_CLIENT_SECRET=&quot;xxxxxxx&quot; \
   OAUTHLIB_INSECURE_TRANSPORT=true \
   python github.py
@@ -502,7 +502,7 @@ also present the user with a friendly welcome page when they go to <code>/</code
 and only redirect them to the Github login prompt when they visit a 
 URL like <code>/login</code> or <code>/auth</code>.</p>
 <p>Once you run the above command, open the following URL in your browser:</p>
-<pre><code>http://localhost:5000/
+<pre><code class="plain">http://localhost:5000/
 </code></pre>
 
 <p><strong>NOTE: Make sure you are logged out of Github and that you clear your cookies 

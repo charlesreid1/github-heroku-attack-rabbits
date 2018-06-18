@@ -442,7 +442,7 @@
 <p>This is the heart of the method.</p>
 <p>The best thing to do here is just to walk you through the script.</p>
 <p>Import statements:</p>
-<pre><code>import os, json
+<pre><code class="python">import os, json
 from os.path import join, isfile, isdir
 from werkzeug.contrib.fixers import ProxyFix
 from flask import Flask, redirect, url_for, send_from_directory
@@ -454,7 +454,7 @@ to your Flask app by creating a <code>/login</code> blueprint,
 meaning all the OAuth stuff is just magically available 
 via <code>/login</code>.</p>
 <p>Set paths for static content:</p>
-<pre><code>PROJECT_ROOT = os.path.dirname(os.path.realpath(__file__))
+<pre><code class="python">PROJECT_ROOT = os.path.dirname(os.path.realpath(__file__))
 STATIC_PATH = 'content'
 </code></pre>
 
@@ -465,7 +465,7 @@ you visit your app's settings page.</p>
 <p>To find this, after you log in, click your profile photo in the
 upper right &gt; Settings &gt; Developer Settings &gt; OAuth Apps &gt; click the 
 name for your OAuth app.</p>
-<pre><code>app = Flask(__name__)
+<pre><code class="python">app = Flask(__name__)
 
 # this worked locally, but not on heroku
 app.wsgi_app = ProxyFix(app.wsgi_app)
@@ -483,7 +483,7 @@ OAuth dance.</p>
 <p><code>make_github_blueprint()</code> is part of the contrib module of flask-dance.
 There are several similar methods to generate blueprints for 
 authenticating with other APIs.</p>
-<pre><code>github_bp = make_github_blueprint(
+<pre><code class="python">github_bp = make_github_blueprint(
                         client_id = os.environ.get('GITHUB_OAUTH_CLIENT_ID'),
                         client_secret = os.environ.get('GITHUB_OAUTH_CLIENT_SECRET'),
                         scope='read:org')
@@ -507,7 +507,7 @@ contents200 = &quot;&lt;html&gt;&lt;body&gt;&lt;h1&gt;Status: OK 200&lt;/h1&gt;&
 <li>Use the <code>github</code> object to call the Github API directly.</li>
 <li>Decide what to do from there.</li>
 </ul>
-<pre><code>@app.route('/')
+<pre><code class="python">@app.route('/')
 def index():
     if not github.authorized:
         return redirect(url_for(&quot;github.login&quot;))
@@ -523,7 +523,7 @@ def index():
 <p>The next line is important to how the server works:
 if all of the criteria above have been met, we return 
 a static file:</p>
-<pre><code>                return send_from_directory(STATIC_PATH, 'index.html')
+<pre><code class="python">                return send_from_directory(STATIC_PATH, 'index.html')
 </code></pre>
 
 <p>This is normally "bad practice," and numerous type A people 
@@ -545,7 +545,7 @@ on disk. </p>
 <p>If the user asks for a non-existent file, a 404 error is shown.</p>
 <p>If the user is not allowed to view the content, they will face 
 the bowel-emptying terrors of the 403 error.</p>
-<pre><code>@app.route('/&lt;path:path&gt;')
+<pre><code class="python">@app.route('/&lt;path:path&gt;')
 def catch_all(path):
 
     if not github.authorized:
@@ -577,7 +577,7 @@ def catch_all(path):
 </code></pre>
 
 <p>Last, set a default 404 handler, and run the app:</p>
-<pre><code>@app.errorhandler(404)
+<pre><code class="python">@app.errorhandler(404)
 def oops(e):
     return contents404
 

@@ -447,7 +447,7 @@ rules into multiple routes to provide access to different
 people on different parts of a site.</p>
 <p>Here is the relevant method that serves up <code>index.html</code> 
 if the user is authenticated:</p>
-<pre><code>@app.route('/')
+<pre><code class="python">@app.route('/')
 def index():
     if not github.authorized:
         return redirect(url_for(&quot;github.login&quot;))

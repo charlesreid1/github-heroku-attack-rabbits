@@ -445,7 +445,7 @@
 conditional on membership in an organization (in this 
 example, membership in the <code>rainbow-mind-machine</code> organization
 is required for access):</p>
-<pre><code>@app.route('/')
+<pre><code class="python">@app.route('/')
 def index():
     if not github.authorized:
         return redirect(url_for(&quot;github.login&quot;))
