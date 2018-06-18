@@ -1,18 +1,17 @@
-# create heroku app
+# Create a Heroku app
 
-
-### Heroku toolbelt
+## Before you begin: install Heroku toolbelt
 
 Heroku offers a really nice command line interface tool called
 Heroku Toolbelt. It is available through Homebrew and Aptitude:
 
 ```plain
-$ brew install heroku   # from Mac
+$ brew install Heroku   # from Mac
 
-$ apt-get install heroku    # from Ubuntu
+$ apt-get install Heroku    # from Ubuntu
 ```
 
-It is then available on the command line as `heroku`.
+It will then be available on the command line as `Heroku`.
 
 The first thing you should do is authenticate with
 your Heroku account by running
@@ -30,27 +29,27 @@ We will use this command line application for the following tasks:
 We will cover these commands as they come up.
 
 
-### Create heroku app
+## Creating a Heroku app
 
-Start by creating a heroku app.
+Start by creating a Heroku app.
 
-* Each heroku app must have a unique name
-* Each heroku app creates a remote git repo
-* Master branch is what Heroku deploys publicly on herokuapps.com
-* You will also need heroku CLI to link your github repo to your heroku app
+* Each Heroku app must have a unique name
+* Each Heroku app creates a remote git repo
+* Master branch is what Heroku deploys publicly on Herokuapps.com
+* You will also need Heroku CLI to link your github repo to your Heroku app
 
 
-### Where heroku app lives
+## Where Heroku apps live
 
 Suppose you are creating an app called `my-cool-app`
-on heroku. Then your application will be hosted by 
+on Heroku. Then your application will be hosted by 
 Heroku and will be available at the URL:
 
 ```plain
 https://my-cool-app.herokuapp.com
 ```
 
-### How heroku apps works
+### How Heroku apps work
 
 If you have used Github Pages before, Heroku uses a similar
 model (live hosting one particular branch of a git repository).
