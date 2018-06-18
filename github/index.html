@@ -300,15 +300,15 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#shut-up-you-twit-and-give-me-the-values-i-need-for-the-callback" title="Shut up you twit and give me the values I need for the callback" class="md-nav__link">
-    Shut up you twit and give me the values I need for the callback
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#values-to-use" title="Values to use" class="md-nav__link">
+    Values to use
+  </a>
   
 </li>
       
@@ -488,15 +488,15 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#shut-up-you-twit-and-give-me-the-values-i-need-for-the-callback" title="Shut up you twit and give me the values I need for the callback" class="md-nav__link">
-    Shut up you twit and give me the values I need for the callback
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#values-to-use" title="Values to use" class="md-nav__link">
+    Values to use
+  </a>
   
 </li>
       
@@ -555,24 +555,15 @@ all intruders, you must create a Github OAuth App.</p>
 <p>In this guide we'll cover the case of checking membership in organizations or teams,
 but what your attack rabbits end up doing to determine if a user is allowed to
 access your secret pages is up to you.</p>
-<h3 id="shut-up-you-twit-and-give-me-the-values-i-need-for-the-callback">Shut up you twit and give me the values I need for the callback</h3>
-<p>So you're a little impatient to get started, huh?
-No, hey, yeah, sure, y'know, that's totally understandable, 
-I get it, you're eager to get some attack rabbits of your own.
-That's fine, y'know, and I'll give you the callback you need to set
-in just a minute, but before I do that, let me just give you some
-advice about how you should best - </p>
-<p>(rough, shaky camera footage and screaming)</p>
-<p>(black screen)</p>
-<p>(fade in: camera zooms into a note held in the teeth of an attack rabbit)</p>
-<pre><code>callback:
-
-http://localhost:5000/login/github/authorized
-
-for testing locally only.
-
-don't use HTTPS!
+<h2 id="values-to-use">Values to use</h2>
+<p>You should set your own values for the <strong>name</strong> and <strong>description</strong> fields.</p>
+<p>The <strong>home URL</strong> is not actually necessary - it is simply provided for users to
+get more information about your app.</p>
+<p>The most important is the <strong>callback URL</strong>, which should be set to:</p>
+<pre><code>http://localhost:5000/login/github/authorized
 </code></pre>
+<p>This is for testing locally <em>only</em>.</p>
+<p>Don't use HTTPS in the callback URL!</p>
                 
                   
                 
