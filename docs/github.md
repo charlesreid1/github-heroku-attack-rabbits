@@ -40,28 +40,18 @@ In this guide we'll cover the case of checking membership in organizations or te
 but what your attack rabbits end up doing to determine if a user is allowed to
 access your secret pages is up to you.
 
-### Shut up you twit and give me the values I need for the callback
+## Values to use
 
-So you're a little impatient to get started, huh?
-No, hey, yeah, sure, y'know, that's totally understandable, 
-I get it, you're eager to get some attack rabbits of your own.
-That's fine, y'know, and I'll give you the callback you need to set
-in just a minute, but before I do that, let me just give you some
-advice about how you should best - 
+You should set your own values for the **name** and **description** fields.
 
-(rough, shaky camera footage and screaming)
+The **home URL** is not actually necessary - it is simply provided for users to
+get more information about your app.
 
-(black screen)
+The most important is the **callback URL**, which should be set to:
 
-(fade in: camera zooms into a note held in the teeth of an attack rabbit)
+    http://localhost:5000/login/github/authorized
 
-```
-callback:
+This is for testing locally *only*.
 
-http://localhost:5000/login/github/authorized
-
-for testing locally only.
-
-don't use HTTPS!
-```
+Don't use HTTPS in the callback URL!
 
