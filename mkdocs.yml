@@ -32,8 +32,8 @@ theme:
 
   # pretty colors! see https://squidfunk.github.io/mkdocs-material/getting-started/#primary-colors
   palette:
-    primary: 'blue grey'
-    accent: 'blue grey'
+    primary: 'red'
+    accent: 'red'
   
   logo: 'img/bunny.png'
 

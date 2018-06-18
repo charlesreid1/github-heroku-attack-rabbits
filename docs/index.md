@@ -26,24 +26,30 @@ Final pages:
 
 Two branches in this repo compose the github-heroku-attack-rabbits documentation:
 
-* (**YOU ARE HERE**) The [docs](https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits/src/branch/docs) branch 
-    contains the files needed to generate the 
+* (**YOU ARE HERE**) The [`docs`](https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits/src/branch/docs)
+    branch contains the files needed to generate the 
     [github-heroku-attack-rabbits documentation site](https://pages.charlesreid1.com/github-heroku-attack-rabbits).
 
-* The [gh-pages](https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits/src/branch/gh-pages) branch
-    contains the static files generated from the documentation.
+* The [`gh-pages`](https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits/src/branch/gh-pages)
+    branch contains the static files generated from the documentation.
     The contents of this branch compose the 
     [github-heroku-attack-rabbits documentation site](https://pages.charlesreid1.com/github-heroku-attack-rabbits).
 
 Two branches illustrate github-heroku-attack-rabbits in practice:
 
-* The [secret](https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits/src/branch/secret) branch contains the files needed to create the secret page. 
-    This repository is public, so obviously these aren't *actually* secret,
-    but in practice this would be in a protected repository.
+* The [`secret`](https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits/src/branch/secret)
+    branch contains the files needed to create the secret page. (This is the
+    "secret page source branch", so to speak.)
+    This repository, the one you are looking at right now, is public, so of course
+    these will not really be secret, but in practice the `secret` branch would
+    live in a private repository.
 
-* The [heroku-pages](https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits/src/branch/heroku-pages) branch
-    contains the content that is actually pushed to Heroku - that is, 
-    the final Flask app.
+* The [`heroku-pages`](https://git.charlesreid1.com/charlesreid1/github-heroku-attack-rabbits/src/branch/heroku-pages)
+    branch contains the content that is actually pushed to Heroku - that is, 
+    the final Flask app. This includes the Flask app (Python program), in
+    addition to files that tell Heroku how to run the app,
+    plus gunicorn "middleware" scripts, plus the static content that 
+    Flask is supposed to serve up (whatever that happens to be).
 
 
 ## Contents
